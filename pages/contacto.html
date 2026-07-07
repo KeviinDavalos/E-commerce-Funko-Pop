@@ -7,16 +7,16 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <div><a href="../index.html"><h1>Funko Pop</h1></a></div>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <!-- <li>Exclusivos</li>
+                 <li>Exclusivos</li>
                 <li>Novedades</li>
                 <li>Pre-ventas</li>
                 <li>Descatalogados</li> -->
-                <li><a href="./contacto.html">Contacto</a></li>
+                <!-- <li><a href="./contacto.html">Contacto</a></li>
                 <li>
                     <a href="">Carrito</a>
                 </li>
@@ -25,10 +25,32 @@
                 </li>
             </ul>
         </nav>
+    </header> --> 
+    <header>
+        <div class="div-logo">
+            <a class="logo" href="../index.html">LOGO</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <h1>Contactanos</h1>
-        <form action="" method="POST">
+        <h1 class="titulo-contacto text-secondary">Contactanos</h1>
+        <form class="form-contacto" action="https://formspree.io/f/mrewdabg" method="POST">
+            <div class="grupo-input">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <div class="grupo-input">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <button class="btn bg-secondary text-dark" type="submit">Enviar</button>
+        </form>
+        <!-- <form action="" method="POST">
             <div>
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="email">
@@ -38,9 +60,9 @@
                 <textarea name="mensaje" id="mensaje"></textarea>
             </div>
             <button type="submit">Enviar</button>
-        </form>
+        </form> -->
     </main>
-    <footer>
+    <!-- <footer>
         <h3>LA BOVEDA DEL COLECCIONISTA</h3>
         <p>El destino definitivo para los cazadores de "Griales". Nos especializamos en coleccionables Funko auténticos, descatalogaods y exclusivos para los fans más apasionados.</p>
         <ul>
@@ -76,6 +98,15 @@
     <div>
         &COPY;2026 LA BÓVEDA DEL COLECCIONISTA,CREADO POR KEVIN DAVALOS
     </div>
+    </footer> -->
+    <footer>
+        <p>Sitio realizado por Kev para Talento Tech</p>
+        <nav>
+            <ul class="footer-list">
+                <li><img src="logoWhatsapp" alt=""></li>
+                <li><img src="logosocial" alt=""></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
