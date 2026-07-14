@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fe9dfb9ca0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="div-logo">
-            <a class="logo" href="./index.html">LOGO</a>
+            <a class="logo" href="./index.html">FUNKO POP</a>
         </div>
         <nav class="header-nav">
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/carrito.html" class="carrito-icono">
+                    <i class="fa-solid fa-cart-shopping"></i> <span id="contador-carrito">0</span>
+                </a></li>
             </ul>
         </nav>
     </header>
-    <!-- <img src="https://picsum.photos/300/200" alt=""> -->
     <main>
-        <h1 class="titulo-home text-secondary">Bienvenida a la tienda</h1>
-        <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aut vitae eaque iure magnam, dolore in fuga rem a quibusdam porro quidem consequatur tempora dolor natus accusantium ex quo, placeat voluptas neque sequi. Architecto illo fugiat cupiditate odio molestiae officia magnam. Unde quia, doloremque sequi quam alias libero labore molestias.</p>
-        <section>
-            <h2 class="titulo-producto text-secondary">Nuestro Productos</h2>
-            <div class="contenedor-tarjetas">
-                <article class="card text-dark">
+        <section class="fondo-conteiner">
+            <h1 class="titulo-home">Bienvenida a la tienda</h1>
+            <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aut vitae eaque iure magnam, dolore in fuga rem a quibusdam porro quidem consequatur tempora dolor natus accusantium ex quo, placeat voluptas neque sequi. Architecto illo fugiat cupiditate odio molestiae officia magnam. Unde quia, doloremque sequi quam alias libero labore molestias.</p>
+        </section>
+        
+        <section class="conteiner-productos">
+            <h2 class="titulo-producto">Nuestro Productos</h2>
+            <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+                <!-- <article class="card text-dark">
                     <img src="https://picsum.photos/300/200" alt="">
                     <h3>titulo 1</h3>
                     <p>texto 1</p>
@@ -47,7 +53,7 @@
                     <p>texto 3</p>
                     <p>$3000</p>
                     <button class="btn bg-secondary text-dark">Agregar al carrito</button>
-                </article>
+                </article> -->
             </div>
         </section>
     </main>
@@ -55,10 +61,11 @@
         <p>Sitio realizado por Kev para Talento Tech</p>
         <nav>
             <ul class="footer-list">
-                <li><img src="logoWhatsapp" alt=""></li>
-                <li><img src="logosocial" alt=""></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
             </ul>
         </nav>
     </footer>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>

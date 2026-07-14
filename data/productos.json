@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "nombre": "Producto 1",
+        "precio": 1000,
+        "img": "img/Funko_Pokemon_Charmander.jpg"
+    },
+    {
+        "id": "2",
+        "nombre": "Producto 2",
+        "precio": 2000,
+        "img": "img/Funko_Tom2.png"
+    },
+    {
+        "id": "3",
+        "nombre": "Producto 3",
+        "precio": 3000,
+        "img": "img/Funko_Avatar_FloatingAang.jpg"
+    },
+    {
+        "id": "4",
+        "nombre": "Producto 4",
+        "precio": 1000,
+        "img": "img/Funko_CasaDeDragon_Syrax.jpg"
+    },
+    {
+        "id": "5",
+        "nombre": "Producto 5",
+        "precio": 2000,
+        "img": "img/Funko_HarleyQuinn.jpg"
+    },
+    {
+        "id": "6",
+        "nombre": "Producto 6",
+        "precio": 3000,
+        "img": "img/Funko_Marvel_Deadpool.jpg"
+    }
+
+]

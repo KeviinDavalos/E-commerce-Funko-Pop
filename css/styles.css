@@ -66,6 +66,7 @@ main{
 img{
     width: 90%;
 } */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 *{
     margin: 0;
@@ -75,19 +76,28 @@ img{
 html{
     font-size: 62.5%;
 }
+:root{
+    --color-primario: #00658d;
+    --color-secundario: #0F172A;
+    --color-terciario: #1C1B1B;
+    /* --color-fondo: #94A3B8; */
+    --color-fondo: #fcf9f8;
+    --color-relleno: #FFFFFF;
+    --color-boton: #f0eded;
+}
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 1.6rem;
-    background: #7c89a9;
-    color: #fff7fb;
+    background-color: var(--color-fondo);
+    /* color: #fff7fb; */
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
 main{
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     padding-bottom: 2rem;
     flex: 1;
@@ -95,7 +105,20 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
+.conteiner-productos{
+    width: 80%;
+}
+.fondo-conteiner{
+    background-color: var(--color-secundario);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-relleno);
+}
+.fondo-conteiner p{
+    opacity: 0.8;
+}
 h1{
     font-size: 3rem;
     font-weight: 800;
@@ -118,11 +141,13 @@ h2{
     font-weight: bold;
     padding: 1.6rem;
     border-radius: 1rem;
+    background-color: var(--color-boton);
 }
 
+
 header, footer{
-    background-color: #5c4a7a;
-    color: #fff7fb;
+    background-color: var(--color-relleno);
+    /* color: #bd2471; */
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -137,13 +162,19 @@ header, footer{
 .logo, .header-nav ul li a{
     text-decoration: none;
     font-size: 3rem;
-    color: inherit;
+    /* color: inherit; */
     display: inline-block;
     padding: 2rem;
 }
 
 .header-nav{
     margin-right: 2rem;
+}
+.header-nav a{
+    color: var(--color-terciario);
+}
+.logo, .carrito-icono i, .card p, .card .btn, #contador-carrito{
+    color: var(--color-primario);
 }
 
 .header-nav ul, footer .footer-list{
@@ -152,26 +183,13 @@ header, footer{
     gap: 2rem;
 }
 
-/* .footer-list img{
-    width: 5rem;
-    padding: 0.5rem; icono de redes de footer
-} */
+footer{
+    padding: 3rem 0;
+}
 
-/* --------------- COLORES ----------------*/
-.bg-primary{
-    background-color: #6e5a8e;
-}
-.bg-secondary{
-    background-color: #f2c66d;
-}
-.text-light{
-    color: #ffffff;
-}
-.text-dark{
-    color: #2a1e35;
-}
-.text-secondary{
-    color: #f2c66d;
+.footer-list i{
+    font-size: 3rem;
+    padding: 0.5rem;
 }
 
 /* -------------------- HOME --------------------- */
@@ -180,6 +198,10 @@ header, footer{
     text-align: center;
     font-size: 2rem;
     padding: 3rem;
+}
+
+.titulo-producto{
+    color: var(--color-secundario);
 }
 
 .contenedor-tarjetas{
@@ -191,7 +213,7 @@ header, footer{
 }
 
 .card{
-    background-color: #8a79a8;
+    background-color: var(--color-relleno);
     width: 30rem;
     border-radius: 1rem;
     overflow: hidden; /* hago que la imagen tmb se curve por el border-radius */
@@ -215,7 +237,7 @@ header, footer{
 
 .form-contacto{
     background-color: #8a79a8;
-    color: #2a1e35;
+    /* color: #2a1e35; */
     width: 100%;
     max-width: 50rem;
     font-size: 2rem;
@@ -243,12 +265,22 @@ header, footer{
     resize: vertical;
 }
 
+/* --------------- CARRITO ---------------- */
+.mensaje-carrito-vacio{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.acciones-carrito{
+    margin-top: 2rem;
+}
+
 /* -------------- MEDIA QUERIES ------------- */
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     header, footer{
         flex-direction: column;
     }
     .header-nav, .div-logo{
         margin: 0;
     }
-} */
+}
